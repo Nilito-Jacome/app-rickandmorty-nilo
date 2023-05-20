@@ -1,0 +1,138 @@
+
+.App {
+  background-image: url("/public/background\ header.png"); /* Ubicación de la imagen
+  background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+  background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
+  background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+  background-size: cover; /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+  max-width: 100%;
+  min-width: 165px;
+  max-height: 100%;
+  min-height: 100px;
+  flex-direction: row;
+}
+
+.icono {
+display: grid;
+align-content: center;
+justify-content: center;
+}
+
+.Contenedor-busqueda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input {
+  width: 40%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: #fbfbfb;
+  background-color: black;
+  border: 2px solid #8fff8b;
+}
+
+.Buscar {
+  width: 15%;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  font-size: 18px;
+  background-color: #8fff8bc0;
+  border: 2px solid #8fff8b;
+}
+
+.Buscar:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 8px darkorange;
+  border-color: #646cff;
+  font-size: 20px;
+}
+
+.Information {
+  width: 100%;
+  height: 100%;
+  padding: 2% 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card{
+  padding: 1%;
+  background-color: #8fff8bd3;
+  color: #0c1ae0ce;
+  font-size: 18px;
+}
+
+.location {
+  padding: 1%;
+  border: 3px solid rgba(33, 13, 211, 0.836);
+  display: grid;
+  grid-gap: 1em;
+  grid-column: 20%, 20%, 20%, 20%, 10%;
+  grid-row: 0px;
+}
+
+.Nombre {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Tipo {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Dimension {
+  grid-column: 3/3;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Residentes {
+  grid-column: 4/4;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Id {
+  grid-column: 5/5;
+  grid-row: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.Container {
+  border: 1px solid goldenrod;
+  padding: 1rem 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+span {
+  color: #a32087ce;
+}
+.ResidentInfo {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-wrap:wrap;
+  place-content: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100%;
+}
