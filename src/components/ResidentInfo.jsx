@@ -23,7 +23,6 @@ const ResidentInfo = ({url}) => {
                     <h4><span>Status: </span>{detail.status} </h4>
                     <h4><span>Location: </span>{ detail.location?.name} </h4>
                     <h4><span>Episode: </span>{ detail.episode?.length} </h4>
-    
                     </li>
             </ul>
         </div>

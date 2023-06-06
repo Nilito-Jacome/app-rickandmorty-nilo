@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <div className="icono">
-        <img src="/public/logo.svg" width={"500"} />
+        <img src="logo.svg" width={"500"} />
       </div>
       <div className="Contenedor-busqueda">
         <label htmlFor="search"></label>
