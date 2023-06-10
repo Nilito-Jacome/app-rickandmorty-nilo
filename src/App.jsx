@@ -5,6 +5,7 @@ import axios from "axios";
 import "./App.css";
 import Location from "./components/Location";
 import ResidentInfo from "./components/ResidentInfo";
+import React from "react";
 
 function App() {
   const number = Math.round(Math.random() * 126) + 1;
