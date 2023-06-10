@@ -30,14 +30,25 @@ function App() {
   };
 
   const searchId = () => {
-    axios
-      .get(`https://rickandmortyapi.com/api/location/${idRandom1}`)
-      .then(resp => {
-          console.log(resp.data)
-          setPlace(resp.data)
-          setArrayMorty(resp.data.residents)
-      })
-      .catch(error => console.error(error));
+    if(searchId===true){
+      axios
+        .get(`https://rickandmortyapi.com/api/location/${idRandom1}`)
+        .then(resp => {
+            console.log(resp.data)
+            setPlace(resp.data)
+            setArrayMorty(resp.data.residents)
+        })
+        .catch(error => console.error(error));
+    }else{
+      axios
+        .get('https://rickandmortyapi.com/api/location/3')
+        .then(resp => {
+            console.log(resp.data)
+            setPlace(resp.data)
+            setArrayMorty(resp.data.residents)
+        })
+        .catch(error => console.error(error));
+    }
     };
 
   return (
