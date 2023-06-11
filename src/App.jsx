@@ -1,5 +1,3 @@
-
-
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
@@ -8,7 +6,7 @@ import ResidentInfo from "./components/ResidentInfo";
 import React from "react";
 
 function App() {
-  const number = Math.round(Math.random() * 126) + 1;
+  const number = (Math.round(Math.random() * 126) + 1);
   const [place, setPlace] = useState({});
   const [idRandom, setIdRandom] = useState(number);
   const [idRandom1, setIdRandom1] = useState("");
@@ -30,29 +28,19 @@ function App() {
   };
 
   const searchId = () => {
-    if(searchId===true){
-      axios
-        .get(`https://rickandmortyapi.com/api/location/${idRandom1}`)
-        .then(resp => {
-            console.log(resp.data)
-            setPlace(resp.data)
-            setArrayMorty(resp.data.residents)
-        })
-        .catch(error => console.error(error));
-    }else{
-      axios
-        .get('https://rickandmortyapi.com/api/location/3')
-        .then(resp => {
-            console.log(resp.data)
-            setPlace(resp.data)
-            setArrayMorty(resp.data.residents)
-        })
-        .catch(error => console.error(error));
-    }
+   
+    axios
+    .get(`https://rickandmortyapi.com/api/location/${idRandom1}`)
+    .then(resp => {
+        console.log(resp.data)
+        setPlace(resp.data)
+        setArrayMorty(resp.data.residents)
+    })
+    .catch(error => console.error(error));
     };
 
   return (
-    <div className="App">
+  <div className="App" >
       <div className="icono">
         <img src="logo.svg" width={"500"} />
       </div>
@@ -73,7 +61,7 @@ function App() {
       <div className="Information">
         <Location data={place} />
       </div>
-      <div className="ResidentInfo">
+      <div className="ResidentInfo" style={{ backgroundImage: "url(/background-page.png" }}>
         {
           arrayMorty.map(resident => (
             <ResidentInfo 

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import axios from "axios";
 import React from "react";
@@ -17,6 +16,7 @@ const ResidentInfo = ({url}) => {
 
     return (
         <div className="Container">
+           
             <ul>
                     <li className="CardResident" >
                     <h4><span>Nombre: </span>{detail.name} </h4>
