@@ -40,7 +40,7 @@ function App() {
     };
 
   return (
-  <div className="App" >
+  <div className="App" style={{ backgroundImage: "url(/background-header.png" }}>
       <div className="icono">
         <img src="logo.svg" width={"500"} />
       </div>

@@ -1,6 +1,6 @@
 
 .App {
-  background-image: url("./background-header.png"); /* Ubicación de la imagen*/
+   /* Ubicación de la imagen*/
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
   background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
