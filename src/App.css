@@ -17,17 +17,23 @@ display: grid;
 align-content: center;
 justify-content: center;
 }
-
+img {
+  width: 500px;
+  height: 210px;
+}
 .Contenedor-busqueda {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0 40px;
+  gap: 20px;
 }
 
 input {
-  width: 40%;
-  height: 100%;
-  font-size: 20px;
+  width: 35%;
+  height: 32px;
+  font-size: 32px;
+  border-radius: 8px;
   text-align: center;
   color: #fbfbfb;
   background-color: black;
@@ -35,23 +41,16 @@ input {
 }
 
 .Buscar {
-  width: 15%;
-  height: 30px;
+  width: 10%;
+  height: 33px;
+  font-size: 32px;
   border-radius: 8px;
   border: 1px solid transparent;
   cursor: pointer;
   transition: border-color 0.25s;
-  font-size: 18px;
   background-color: #8fff8bc0;
   border: 2px solid #8fff8b;
   cursor: pointer;
-}
-
-.Buscar:hover {
-  transform: translateY(-1px);
-  box-shadow: 2px 2px 8px darkorange;
-  border-color: #646cff;
-  font-size: 20px;
 }
 
 .Information {
@@ -63,10 +62,11 @@ input {
 }
 
 .location-card{
+  font-size: 30px;
+  margin: 0 20px;
   padding: 1%;
   background-color: #8fff8bd3;
   color: #0c1ae0ce;
-  font-size: 18px;
 }
 
 .location {
@@ -120,9 +120,15 @@ input {
 
 .Container {
   border: 1px solid goldenrod;
-  padding: 1rem 1rem;
   text-align: center;
   margin: 1rem;
+  width: 350px;
+  height: 350px;
+}
+.ResidentInfo img {
+  padding: 1rem 1rem;
+  width: 350px;
+  height: 250px;
 }
 span {
   color: #a32087ce;
@@ -131,12 +137,14 @@ span {
   padding: 1rem 1rem;
   display: flex;
   flex-wrap:wrap;
-  place-content: center;
+  justify-content: center;
   min-width: 100%;
   max-width: 100%;
   min-height: 100px;
   max-height: 100%;
   color: #8fff8b;
+  margin: 0 20px;
+  gap: 10px;
 }
 .ResidentInfo{
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
@@ -147,4 +155,112 @@ span {
   min-width: 165px;
   max-height: 100%;
   min-height: 100vh;
+}
+@media screen and (max-width: 1440px) {
+  h4 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  input {
+    width: 35%;
+    height: 37px;
+    font-size: 20px;
+  }
+  .Buscar {
+    width: 10%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .location-card{
+    font-size: 20px;
+  }
+  .Container {
+    width: 250px;
+    height: 300px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .ResidentInfo img {
+    width: 220px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 770px) {
+  input {
+    width: 35%;
+    height: 30px;
+    font-size: 15px;
+  }
+  .Buscar {
+    height: 29px;
+    font-size: 15px;
+  }
+  .location-card{
+    font-size: 16px;
+  }
+  .Container {
+    width: 210px;
+    height: 260px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  .ResidentInfo img {
+    width: 180px;
+    height: 180px;
+  }
+  .ResidentInfo {
+    gap: 0;
+    padding: 0 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  input {
+    width: 55%;
+    font-size: 12px;
+  }
+  .Buscar {
+    width: 15%;
+    font-size: 12px;
+  }
+  .location-card{
+    font-size: 10px;
+  }
+  .Container {
+    width: 230px;
+    height: 260px;
+  }
+  h4 {
+    font-size: 10px;
+  }
+  .ResidentInfo img {
+    width: 220px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 380px) {
+  input {
+    width: 60%;
+    height: 25px;
+    font-size: 13px;
+  }
+  .Buscar {
+    width: 20%;
+    height: 26px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  input {
+    width: 65%;
+    height: 25px;
+    font-size: 12px;
+  }
+  .Buscar {
+    width: 20%;
+    height: 26px;
+    font-size: 12px;
+  }
 }
