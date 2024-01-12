@@ -146,6 +146,9 @@ span {
   margin: 0 20px;
   gap: 10px;
 }
+li {
+  list-style:none;
+}
 .ResidentInfo{
   background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
   background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
@@ -251,16 +254,22 @@ span {
     height: 26px;
     font-size: 13px;
   }
+  .location-card{
+    font-size: 8px;
+  }
 }
 @media screen and (max-width: 320px) {
   input {
-    width: 65%;
+    width: 70%;
     height: 25px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .Buscar {
     width: 20%;
     height: 26px;
-    font-size: 12px;
+    font-size: 11px;
+  }
+  .location-card{
+    font-size: 7px;
   }
 }

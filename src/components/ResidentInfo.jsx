@@ -19,7 +19,7 @@ const ResidentInfo = ({url}) => {
            
             <ul>
                     <li className="CardResident" >
-                    <h4><span>Nombre: </span>{detail.name} </h4>
+                    <h4><span>Name: </span>{detail.name} </h4>
                     <img src={detail.image} />
                     <h4><span>Status: </span>{detail.status} </h4>
                     <h4><span>Location: </span>{ detail.location?.name} </h4>

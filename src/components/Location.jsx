@@ -12,7 +12,7 @@ const Location = ({data}) => {
 
             <h3 className="Dimension"><span>Dimension:</span>{data.dimension}</h3>
 
-            <h3 className="Residentes"><span>Residentes:</span>{data.residents?.length}</h3>
+            <h3 className="Residentes"><span>Residents:</span>{data.residents?.length}</h3>
 
             <h3 className="Id"><span>Id:</span>{data.id}</h3>
             </div>
